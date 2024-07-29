@@ -1,11 +1,9 @@
 import React from "react";
+import Homepage from "./pages/Homepage"
 
 const App = () => {
   return (
-    <h1>
-      This is App.js
-      <Login />
-    </h1>
+    <Homepage />
   );
 };
 
