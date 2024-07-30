@@ -1,0 +1,32 @@
+.font {
+  margin: 30px 0 0px 550px;
+  /* position: relative; */
+}
+.shop-link {
+  margin: 5px 0px 0px 20px;
+}
+.work {
+  margin: 10px 0px 0 20px;
+}
+/* .continuing {
+  margin: 0 0 0 20px;
+} */
+.input {
+  height: 30px;
+  width: 370px;
+  margin: 0 0 0 20px;
+  border: 1px solid rgb(157, 153, 153);
+  border-radius: 5px;
+}
+.suggestion {
+  margin: 0 0 0 -182px;
+}
+.logo {
+  margin: 0 0 0 150px;
+}
+
+/* .paper {
+  height: 100px;
+  width: 50px;
+  border: 1px solid black;
+} */

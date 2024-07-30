@@ -1,11 +1,12 @@
 import React from "react";
-
+import Login_page from "./src/pages/LoginPage/login_page";
+import FooterBasic from "./src/Components/FooterBasic/FooterBasic";
 const App = () => {
   return (
-    <h1>
-      This is App.js
-      <Login />
-    </h1>
+    <>
+      <Login_page />
+      <FooterBasic />
+    </>
   );
 };
 
