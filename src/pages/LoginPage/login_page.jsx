@@ -18,38 +18,30 @@ import AmazonLogo from "../../Assets/Logo/amazon.jpg";
 import "./loginPage.css";
 
 const Login_page = () => {
-  const DemoPaper = styled(Paper)(({ theme }) => ({
-    width: 380,
-    height: 340,
+  // const DemoPaper = styled(Paper)(({ theme }) => ({
+  //   width: 380,
+  //   height: 340,
 
-    padding: theme.spacing(2),
-    ...theme.typography.body2,
-    textAlign: "center",
-  }));
+  //   padding: theme.spacing(2),
+  //   ...theme.typography.body2,
+  //   textAlign: "center",
+  // }));
   return (
     <Grid container spacing={2}>
       <Grid xs={6} md={8}>
-        {/* <Item>xs=6 md=8</Item> */}
-        {/* <Box>
-          <paper
-            sx={{ height: "100px", with: "50px", border: "1px solid black" }}
-          ></paper>
-        </Box> */}
         <Box className="font">
           <Box className="logo">
             <img src={AmazonLogo} alt="AmazonLogo" height={40} width={120} />
           </Box>
           <Box>
-            {/* <Stack direction="row" spacing={2}>
-              <DemoPaper square={false}> */}
             <Box>
-              <Paper elevation={2} sx={{ height: "340px", width: "420px" }}>
+              <Paper elevation={2} sx={{ height: "350px", width: "420px" }}>
                 <Typography sx={{ margin: "5px 0 14px 20px" }} variant="h5">
                   {" "}
                   Sign in
                 </Typography>
                 <Typography variant="p" sx={{ margin: "0px 0 0 20px" }}>
-                  Email or mobile phone number
+                  Email or Mobile Phone Number
                 </Typography>
 
                 <Box>
@@ -79,7 +71,7 @@ const Login_page = () => {
                   <Link href="#" variant="use">
                     {"Use"}
                   </Link>
-                  <Typography component="span"> and</Typography>
+                  <Typography component="span"> and </Typography>
                   <Link href="#" variant="privacy">
                     {"Privacy Notice."}
                   </Link>
