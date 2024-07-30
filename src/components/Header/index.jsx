@@ -1,47 +1,50 @@
 import React from "react";
-import logo from "../../assets/images/logo.png";
+import Box  from "@mui/material/Box";
+import AmazonLogo from "../../assets/images/logo.png"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import "./index.css"
-import { Margin } from "@mui/icons-material";
+import { Select, Typography} from "@mui/material";
+import {select, MenuItem} from "@mui/material";
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import SearchSharpIcon from '@mui/icons-material/SearchSharp';
+import InputBase from '@mui/material/InputBase';
+import "./style.css"
+
 
 const Header=()=>{
     return(
         <>
-        <div className="header-main-container">
-            <section>
-            <div className="logo-section">
-            <img src={logo} alt="amazon-logo" className="amazon-logo"/>
-            <div className="address-section">
-                <div className="address-text"><p style={{marginLeft:20}}>Delivering to Chandigarh 160001</p></div>
-                <div className="address-icon">
-                 <LocationOnIcon/>
-                 <p>Update location</p>
-                </div>
-            </div>
-            </div>
-            </section>
+      <Box className="header-container">
+        <Box className="Logo-conatiner">
+        <img className="amazon-logo" src={AmazonLogo} alt="amazon-logo" />
+        <Box className="logo-Text-container">
+        <Typography variant="body1" className="Address-Text" style={{fontSize:12, marginLeft:24}}>Delivering to Chandigarh 161001</Typography>
+        <Typography variant="h6" className="logo-text" style={{fontSize:14, marginTop:-6}}><LocationOnIcon/>Update Location</Typography>
 
-            <section className="input-section">
-                <div className="input-container">
-                    <div className="input-dropdown">
-                        <select name="input-dropdown" id="input-dropdown">
-                            <option value="0">All</option>
-                            <option value="1">Alexa Skills</option>
-                            <option value="2">Amazon Devices</option>
-                            <option value="3">Amazon Fashion</option>
-                            <option value="4">Amazon Pharmacy</option>
-                            <option value="5">Appliance</option>
-                            <option value="6">App & Games</option>
-                            <option value="7">Audible Audibooks</option>
-                            <option value="8">Baby</option>
-                            <option value="9">Beauty</option>
-                            <option value="10">Books</option>
-                            <option value="11">Car & Motorbike</option>
-                        </select>
-                    </div>
-                </div>
-            </section>
-        </div>
+        </Box>
+<Box>
+
+</Box>
+        </Box>
+        <Box className="input-section">
+            <Select style={{height:40.5, border:0, backgroundColor: "grey", borderTopLeftRadius:2, borderBottomLeftRadius:2, borderTopRightRadius:0, borderBottomRightRadius:0}}>
+                <MenuItem value={0}>All</MenuItem>
+                <MenuItem value={1}>Baby</MenuItem>
+                <MenuItem value={2}>Beauty</MenuItem>
+                <MenuItem value={3}>Mobile</MenuItem>
+                <MenuItem value={4}>Cloths</MenuItem>
+                <MenuItem value={5}>Fashion</MenuItem>
+                <MenuItem value={6}>Alexa</MenuItem>
+            </Select>
+            <InputBase fullWidth style={{backgroundColor:"white", color:"black"}}
+        sx={{p:1, flex: 1, height:39, mt:0.1 , w:200}}
+        placeholder ="Search Amazon.in"
+      />
+            
+            <Button variant="contained" className="searchBtn" style={{borderRadius:0, 
+                borderTopRightRadius:2, borderBottomRightRadius:2, borderTopLeftRadius:0 }}><SearchSharpIcon/></Button>
+        </Box>
+        </Box>
         </>
     )
 };
