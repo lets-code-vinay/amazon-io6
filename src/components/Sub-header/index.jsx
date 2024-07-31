@@ -1,18 +1,27 @@
 import React from "react";
 import Box from "@mui/material/Box"
-import Menu from '@mui/material/Menu';
-import AppBar from '@mui/material/AppBar';
-import { MenuItem } from "@mui/material";
+import Typography from "@mui/material";
+import { MenuItem, Typography } from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 import "./style.css"
 
 const SubHeader =()=>{
     return(
 <>
+
 <Box class="Sub-header">
-<Menu>
-    <MenuItem value="0">contact</MenuItem>
-</Menu>
+<Typography className="Menu-icon"><MenuIcon/>All</Typography>
+    <Typography>Fresh</Typography>
+    <Typography>Amazon MiniTV</Typography>
+    <Typography>Sell</Typography>
+    <Typography>Best Sellers</Typography>
+    <Typography>Today's Deals</Typography>
+    <Typography>Mobiles</Typography>
+    <Typography>Prime</Typography>
+    <Typography>Customer Services</Typography>
+    <Typography>Electorinces</Typography>
 </Box>
+
 </>
     );
 };
