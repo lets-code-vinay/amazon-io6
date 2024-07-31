@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderBasic from "./src/Components/HeaderBasic/HeaderBasic";
+import HeaderBasic from "./src/components/HeaderBasic/HeaderBasic";
 import Login_page from "./src/pages/LoginPage/login_page";
 import SignupPage from "./src/pages/SignupPage/SignupPage";
 import { Route, Routes } from "react-router-dom";
