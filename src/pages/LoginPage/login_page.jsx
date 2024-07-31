@@ -15,7 +15,7 @@ import { styled } from "@mui/material/styles";
 
 import { amber } from "@mui/material/colors";
 
-import AmazonLogo from "../../Assets/Logo/amazon.jpg";
+import AmazonLogo from "../../assets/Logo/amazon.jpg";
 import "./loginPage.css";
 import { useNavigate } from "react-router-dom";
 // import theme from "../../../theme";

@@ -86,7 +86,7 @@ const SignupPage = () => {
             type="text"
             size="small"
             value={name}
-            sx={{ margin: "0px 0 10px 20px" }}
+            sx={{ margin: "0px 0 10px 20px", width: "80%" }}
             onChange={handleName}
           />
 
@@ -109,7 +109,7 @@ const SignupPage = () => {
           <TextField
             type="text"
             size="small"
-            sx={{ margin: "0px 0 10px 20px" }}
+            sx={{ margin: "0px 0 10px 20px", width: "80%" }}
             onChange={handleNumberOrEmail}
           />
           <Typography
@@ -135,7 +135,7 @@ const SignupPage = () => {
             type={show ? "text" : "password"}
             autoComplete="current-password"
             size="small"
-            sx={{ margin: "0px 0 10px 20px" }}
+            sx={{ margin: "0px 0 10px 20px", width: "80%" }}
             onclick={ShowText}
           />
           <Box>
