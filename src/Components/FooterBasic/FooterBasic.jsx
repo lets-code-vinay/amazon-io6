@@ -10,7 +10,7 @@ const FooterBasic = () => {
       sx={{
         margin: "25px 0 0 0",
         height: "126px",
-        width: "100%",
+        width: "99.9%",
         border: "1px solid black",
         background: "rgb(35,47,62)",
       }}

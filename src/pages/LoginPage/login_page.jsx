@@ -10,14 +10,18 @@ import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 // import TextField from "@mui/material/TextField";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+
 import { styled } from "@mui/material/styles";
 
 import { amber } from "@mui/material/colors";
 
 import AmazonLogo from "../../Assets/Logo/amazon.jpg";
 import "./loginPage.css";
+import { useNavigate } from "react-router-dom";
+// import theme from "../../../theme";
 
 const Login_page = () => {
+  const navigate = useNavigate();
   // const DemoPaper = styled(Paper)(({ theme }) => ({
   //   width: 380,
   //   height: 340,
@@ -26,6 +30,10 @@ const Login_page = () => {
   //   ...theme.typography.body2,
   //   textAlign: "center",
   // }));
+  const HandleYourCreateAccount = () => {
+    // console.log("handleyourcreat");
+    navigate("/signup");
+  };
   return (
     <Grid container spacing={2}>
       <Grid xs={6} md={8}>
@@ -102,15 +110,17 @@ const Login_page = () => {
               New to Amazon?
             </Divider>
             <Button
-              // variant="text"
+              variant="text"
               sx={{
                 margin: "20px 0 0 15px",
                 width: "380px",
                 background: "none",
                 // background: amber[400],
                 color: "black",
+                // backgroundColor: theme.palette.amber.main,
                 border: "1px solid rgb(211,211,211)",
               }}
+              onClick={HandleYourCreateAccount}
             >
               Create your Amazon Account
             </Button>
