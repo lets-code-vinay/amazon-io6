@@ -8,7 +8,7 @@ import Homepage from "./src/pages/Homepage"
 const App = () => {
   return (
     <>
-      <HeaderBasic />
+      
       <Routes>
       <Route exact path="/" element={<Homepage/>} />
         <Route  path="/login" element={<Login_page />} />

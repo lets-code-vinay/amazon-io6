@@ -9,7 +9,6 @@ return(
     <>
     <Header/>
     <SubHeader/>
-    <h1>hello</h1>
     <Footer/>
     </>
 );
