@@ -28,6 +28,11 @@
 .amazon-logo{
     height: 8.5vh;
 }
+
+.sign-in-text{
+    color: white !important;
+    text-decoration: none !important;
+}
 .Address-Text{
     color: rgb(231, 226, 226);
 }

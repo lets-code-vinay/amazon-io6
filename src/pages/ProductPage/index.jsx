@@ -40,7 +40,7 @@ const ProductPage = (props) => {
             key={index} 
             image={product.thumbnail} 
             title={product.title} 
-            images={product.images} 
+            images={product.images[0]} 
             price={product.price}
             rating={product.rating}
           />

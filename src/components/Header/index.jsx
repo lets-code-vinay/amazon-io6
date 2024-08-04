@@ -4,12 +4,12 @@ import AmazonLogo from "../../assets/images/logo.png"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Select, Typography} from "@mui/material";
 import {Select, MenuItem} from "@mui/material";
-import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Flag from "../../assets/images/india-flag.png"
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import InputBase from '@mui/material/InputBase';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Link from "@mui/material/Link";
+import IndiaFlag from "../../assets/images/india-Flag.png"
 import "./style.css"
 
 
@@ -48,12 +48,12 @@ const Header=()=>{
         </Box>
 
         <Box className="Header-options-section">
-        <Select className="Header-Dropdown">
-<MenuItem value={0}>EN</MenuItem>
+        <Select className="Header-Dropdown" placeholder="All">
+<MenuItem value={0}><img style={{height:12, marginRight:1.5}} src={IndiaFlag} alt="india-flag" />EN</MenuItem>
 
         </Select>
-        <Typography className="Header-signin-text" style={{lineHeight:1}}><span style={{fontSize:12}} >Hello, sign in</span><br/>
-        Accounts & Lists</Typography>
+        <Typography className="Header-signin-text " style={{lineHeight:1}}><Link className="sign-in-text" href="/login"><span style={{fontSize:12}} > Hello, sign in</span><br/>
+        Accounts & Lists</Link></Typography>
         <Typography className="Header-signin-text" style={{lineHeight:1}}><span style={{fontSize:12}} >Returns</span><br/>
          & Orders</Typography>
          <Typography className="Header-signin-text cartIcon" style={{lineHeight:1, fontSize:16}}><ShoppingCartIcon/>Cart</Typography>
