@@ -23,6 +23,12 @@
 .menu-options:hover{
 border: 1px solid #ffffff;
 padding: 5px;
+cursor: pointer;
+}
+.All{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-options{
@@ -34,4 +40,12 @@ border: 1px solid none;
 }
 .Sub-header-image:hover{
     border: 1px solid #ffffff;
+}
+
+.Link{
+    text-decoration: none !important;
+    color: white !important;
+}
+.product-btn:hover{
+    cursor: pointer;
 }
