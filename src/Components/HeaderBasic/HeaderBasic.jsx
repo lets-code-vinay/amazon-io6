@@ -1,7 +1,7 @@
 import { Box, Divider } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import React from "react";
-import AmazonLogo from "../../Assets/Logo/amazon.png";
+import AmazonLogo from "../../assets/logo/amazon.png";
 import "./Header.css";
 const HeaderBasic = () => {
   return (

@@ -1,20 +1,24 @@
 import React from "react";
-import HeaderBasic from "./src/components/HeaderBasic/HeaderBasic";
-import Login_page from "./src/pages/LoginPage/login_page";
+
 import SignupPage from "./src/pages/SignupPage/SignupPage";
+import LoginPage from "./src/pages/LoginPage/LoginPage";
+
+import Homepage from "./src/pages/Homepage";
 import { Route, Routes } from "react-router-dom";
-import FooterBasic from "./src/Components/FooterBasic/FooterBasic";
+
 const App = () => {
   return (
     <>
-      <HeaderBasic />
       <Routes>
-        <Route exact path="/login" element={<Login_page />} />
+        <Route exact path="/" element={<Homepage />} />
+        <Route path="/homepage" element={<Homepage />} />
+
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        {/* <Route path="/productpage" element={<ProductPage />} /> */}
       </Routes>
       {/* <Login_page /> */}
       {/* <SignupPage /> */}
-      <FooterBasic />
     </>
   );
 };
